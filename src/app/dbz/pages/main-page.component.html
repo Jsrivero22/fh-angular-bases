@@ -1,0 +1,18 @@
+<h1 class="text-center">DBZ Personajes</h1>
+<div class="text-center">
+
+    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/677b7403-76bf-4871-b1eb-996331c62c03/d4ndmag-ff1e52ee-a38d-4999-adbb-fc0d7116c54f.png/v1/fit/w_800,h_301/logo___dragon_ball_merchandising_red_by_vicdbz_d4ndmag-414w-2x.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MzAxIiwicGF0aCI6IlwvZlwvNjc3Yjc0MDMtNzZiZi00ODcxLWIxZWItOTk2MzMxYzYyYzAzXC9kNG5kbWFnLWZmMWU1MmVlLWEzOGQtNDk5OS1hZGJiLWZjMGQ3MTE2YzU0Zi5wbmciLCJ3aWR0aCI6Ijw9ODAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.YnYWzHD4Q1xRS-bn95R7bCyUgNXINvcPx-hYM4b5LyE"
+        alt="" width="200px">
+</div>
+<hr>
+
+<div class="row g-5 g-md-4 mb-3">
+    <div class="col-md-6">
+
+        <dbz-list [characterList]="characters" (onDelete)="onDeleteCharacter($event)"></dbz-list>
+
+    </div>
+    <div class="col-md-6">
+        <dbz-add-character (onNewCharacter)="onNewCharacter($event)"></dbz-add-character>
+    </div>
+</div>
